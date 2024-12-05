@@ -1,0 +1,57 @@
+/* Seção de Serviços */
+.servicesSection {
+  background-color: #fafafa;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.servicesSection h2 {
+  font-size: 2rem;
+  color: #d6336c;
+  margin-bottom: 30px;
+}
+
+/* Grid Container para 2x2 */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+  gap: 20px; /* Espaçamento entre os itens */
+  justify-items: center; /* Centraliza os itens no grid */
+}
+
+/* Cartão de Serviço */
+.serviceCard {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%; /* Para se ajustar ao espaço disponível */
+  max-width: 300px; /* Tamanho máximo */
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagem dos Serviços */
+.serviceImage {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.serviceCard h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .gridContainer {
+    grid-template-columns: 1fr; /* Ajusta para 1 coluna em telas menores */
+  }
+}

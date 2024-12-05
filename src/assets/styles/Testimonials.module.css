@@ -1,0 +1,93 @@
+/* Seção de Depoimentos */
+/* BackgroundCp.module.css */
+.background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* A tela inteira será coberta */
+  background-image: url('../images/1351868.png'); /* Certifique-se de que a imagem está no caminho correto */
+  background-size: cover;
+  background-position: center;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  z-index: -1; /* Garante que o fundo fique atrás do conteúdo */
+}
+
+.background.scrolled {
+  background-color: rgba(0, 0, 0, 0.5); /* Opacidade do fundo quando rolado */
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 10; /* O conteúdo vai sempre aparecer por cima do fundo */
+}
+
+
+.testimonialsSection {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .testimonialsSection h2 {
+    font-size: 2rem;
+    color: #d6336c;
+    margin-bottom: 30px;
+  }
+  
+  /* Grid Container para 2x2 */
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-items: center; /* Centraliza os itens no grid */
+  }
+  
+  /* Cartão de Depoimento */
+  .testimonialCard {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%; /* Para se ajustar ao espaço disponível */
+    max-width: 300px; /* Tamanho máximo */
+  }
+  
+  .testimonialCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Foto do Cliente */
+  .testimonialImage {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+  }
+  
+  .testimonialCard h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .testimonialCard p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .gridContainer {
+      grid-template-columns: 1fr; /* Ajusta para 1 coluna em telas menores */
+    }
+  }
+  
