@@ -1,0 +1,80 @@
+/* Estilo para o header */
+/*Apenas a logo*/
+.header {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    z-index: 10; /* Garante que o header fique acima do background */
+    font-size: 24px;
+    font-weight: bold;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+  }
+  /*Com os bootoes*/
+  .menu {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    z-index: 10; /* Garante que o menu fique acima do background */
+    display: flex;
+    gap: 30px;
+    border-radius: 12;
+  }
+  
+  
+  .backgroundimage {
+    background-image: url('/public/assets/images/1351868.png'); /* Substitua pela URL da sua imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    transition: filter 0.2s ease-in-out; /* Suaviza o desfoque */
+  }
+  
+  .blur-0 {
+    filter: blur(0px);
+  }
+  
+  .blur-1 {
+    filter: blur(1px);
+  }
+  
+  .blur-2 {
+    filter: blur(2px);
+  }
+  
+  .blur-3 {
+    filter: blur(3px);
+  }
+  
+  .blur-4 {
+    filter: blur(4px);
+  }
+  
+  .blur-5 {
+    filter: blur(5px);
+  }
+  
+  .blur-6 {
+    filter: blur(6px);
+  }
+  
+  .blur-7 {
+    filter: blur(7px);
+  }
+  
+  .blur-8 {
+    filter: blur(8px);
+  }
+  
+  .blur-9 {
+    filter: blur(9px);
+  }
+  
+  .blur-10 {
+    filter: blur(10px);
+  }
+  

@@ -1,0 +1,215 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #fdfdfd;
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3 {
+    color: #d6336c; /* Rosa elegante para títulos */
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Hero Section */
+ /* Ajustes no Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;  /* Alinha os itens verticalmente */
+  justify-content: space-between;  /* Distribui os itens ao longo do eixo horizontal */
+  padding: 20px 40px;  /* Ajusta o preenchimento */
+  background-color: #ffe6f1;  /* Cor de fundo suave */
+}
+
+/* Logo */
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  max-width: 120px;  /* Tamanho máximo da logo */
+  height: auto;
+}
+
+/* Título e Texto */
+/* Estilo do Header */
+/* Container do Header, ficará no topo e sobre a imagem */
+.header-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0; /* Ajuste o espaçamento conforme necessário */
+  z-index: 1; /* Garante que os botões fiquem acima da imagem */
+}
+
+/* Container dos botões, com alinhamento horizontal */
+.header-buttons {
+  display: flex;
+  justify-content: space-evenly; /* Organiza os botões de forma uniforme */
+  width: 50%; /* Define a largura dos botões */
+}
+
+/* Estilo dos botões, sem fundo e com efeito de hover */
+.header-button {
+  background: none; /* Sem fundo */
+  color: white; /* Cor do texto */
+  border: 2px solid white; /* Borda branca */
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none; /* Remove o sublinhado do link */
+  margin: 0 10px; /* Espaçamento entre os botões */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+/* Efeito de hover nos botões */
+.header-button:hover {
+  background-color: white;
+  color: #d6336c; /* Cor para o texto quando o botão é hover */
+}
+
+
+
+  
+  /* About Section */
+  .about-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .about-section p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  /* Services Section */
+  .services-section {
+    background-color: #fafafa;
+    padding: 50px 20px;
+  }
+  
+  .services-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .services-section .col-md-4 {
+    flex: 1 1 300px;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .services-section img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .services-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Testimonials Section */
+  .testimonials-section {
+    background-color: #ffe6f1;
+    padding: 50px 20px;
+  }
+  
+  .testimonials-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .testimonials-section blockquote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .testimonials-section p {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer .social-links {
+    margin-top: 10px;
+  }
+  
+  .footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .footer .social-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Newsletter Form */
+  .newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .newsletter-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 250px;
+    font-size: 1rem;
+  }
+  
+  .newsletter-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #d6336c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #c1275b;
+  }
+  

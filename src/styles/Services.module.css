@@ -1,0 +1,113 @@
+/* Seção de Serviços */
+.servicesSection {
+  background-color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Lista de serviços em grid */
+.servicesList {
+  display: grid; /* Define como grid */
+  grid-template-columns: repeat(2, 1fr); /* 2 containers por linha */
+  gap: 60px; /* Espaçamento entre os containers */
+  justify-content: center; /* Centraliza o grid */
+  margin-bottom: 30px; /* Adiciona margem inferior para o efeito de scroll */
+}
+
+/* Cartão de Serviço */
+.serviceCard {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transição para transform e box-shadow */
+  max-width: 100%; /* Remove o limite de largura para se adaptar ao grid */
+  opacity: 0; /* Inicialmente invisível */
+  transform: translateX(-50px); /* Inicia a partir de uma posição deslocada */
+}
+
+/* Efeito de animação */
+.serviceCard[data-aos="fade-right"] {
+  transform: translateX(-50px); /* Colunas da esquerda entram de fora para dentro */
+}
+
+.serviceCard[data-aos="fade-left"] {
+  transform: translateX(50px); /* Colunas da direita entram de fora para dentro */
+}
+
+.serviceCard[data-aos="fade-right"].aos-animate {
+  opacity: 1; /* Torna visível quando animado */
+  transform: translateX(0); /* Move para a posição normal */
+}
+
+.serviceCard[data-aos="fade-left"].aos-animate {
+  opacity: 1; /* Torna visível quando animado */
+  transform: translateX(0); /* Move para a posição normal */
+}
+
+/* Efeito de hover: Sobrescrição */
+.serviceCard:hover {
+  transform: translateY(-5px); /* Eleva o item */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Aumenta a sombra */
+}
+
+/* Alternância de posição */
+.serviceCard.leftAlign {
+  flex-direction: row; /* Texto à esquerda, imagem à direita */
+}
+
+.serviceCard.rightAlign {
+  flex-direction: row-reverse; /* Texto à direita, imagem à esquerda */
+}
+
+/* Descrição do Serviço */
+.serviceDescription {
+  flex: 1;
+  padding: 20px 30px;
+  text-align: left;
+}
+
+.serviceDescription h3 {
+  font-size: 1.5rem;
+  color: #d6336c;
+  margin-bottom: 10px;
+}
+
+.serviceDescription p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Imagem dos Serviços */
+.serviceImage {
+  flex: 1;
+  max-width: 450px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .servicesList {
+    grid-template-columns: 1fr; /* 1 container por linha em telas menores */
+  }
+
+  .serviceCard {
+    flex-direction: column; /* Empilha texto e imagem em telas menores */
+    text-align: center;
+  }
+
+  .serviceImage {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .serviceDescription {
+    text-align: center;
+    padding: 0 15px;
+  }
+}
